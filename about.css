@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    color: #ebebeb;
+   
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+    z-index: 2;
+}
+
+.logo{
+    font-size: 30px;
+    color: #ebebeb;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+.logo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    animation: showRight 1s ease forwards;
+    animation-delay: .5s;
+    z-index: 2;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ebebeb;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.navbar a:hover, .navbar a.active{
+    color: #00abf0;
+}
+body{
+    
+    background: url("https://media.istockphoto.com/id/1248263998/photo/isolated-high-tech-open-laptop-with-abstract-vibrant-color-screen-on-a-dark-background.jpg?s=612x612&w=0&k=20&c=_kn4qt0zDFZ6HuYgyKEzlXqhCPVkPk2thngK_MW-OPo=") no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+p{
+    line-height: 1.6;
+    color: black;
+}
+
+.skill-list{
+   list-style: none;
+   line-height: 1.6;
+   color: black;
+}
+@keyframes showRight{
+    100%{
+    width:0%;
+    }
+
+}
